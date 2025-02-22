@@ -1,5 +1,5 @@
 [project]
-name = "pawl"
+name = "pawel"
 version = "0.1.0"
 description = ""
 authors = [{ name = "Andy Miles", email = "akmiles@icloud.com" }]
@@ -16,13 +16,13 @@ dependencies = [
 ]
 
 [tool.hatch.build.targets.sdist]
-include = ["src/pawl"]
+include = ["src/pawel"]
 
 [tool.hatch.build.targets.wheel]
-include = ["src/pawl"]
+include = ["src/pawel"]
 
 [tool.hatch.build.targets.wheel.sources]
-"src/pawl" = "pawl"
+"src/pawl" = "pawel"
 
 [build-system]
 requires = ["hatchling"]
