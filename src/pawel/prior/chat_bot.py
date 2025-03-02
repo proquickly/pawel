@@ -6,7 +6,7 @@ model = GPT2LMHeadModel.from_pretrained(model_name)
 tokenizer = GPT2Tokenizer.from_pretrained(model_name)
 
 
-def generate_response(prompt, chat_history=[], max_length=500):
+def generate_response(prompt, chat_history=[], max_length=100):
     chat_history.append(prompt)
     inputs = tokenizer.encode(" ".join(chat_history), return_tensors="pt")
     outputs = model.generate(inputs, max_length=max_length, num_return_sequences=1,
